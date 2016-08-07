@@ -1,15 +1,4 @@
-<?php
-/**
- * Template part for displaying posts.
- *
- * @link https://codex.wordpress.org/Template_Hierarchy
- *
- * @package mako
- */
-
-?>
-
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> class="post">
 	<header class="entry-header">
 		<?php
 		if ( is_single() ) :

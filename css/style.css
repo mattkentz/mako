@@ -309,7 +309,7 @@ big {
   clear: both;
   width: 100%; }
 
-.body {
+#site-body {
   display: flex;
   flex-direction: column; }
 
@@ -341,7 +341,7 @@ big {
 .footer {
   order: 10; }
 
-@media (min-width: 40em) {
+@media (min-width: 50em) {
   .nav {
     order: 2; }
 

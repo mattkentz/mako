@@ -1,23 +1,16 @@
-<?php
-/**
- * The main template file.
- *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * E.g., it puts together the home page when no home.php file exists.
- *
- * @link https://codex.wordpress.org/Template_Hierarchy
- *
- * @package mako
- */
+<?php get_header(); ?>
 
-get_header(); ?>
+<section class="content">
+	<section class="posts">
+		<article class="post">
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		</article>
+	</section>
+</section>
 
-		<?php
+<section class="content">
+	<section class="posts">
+	<?php
 		if ( have_posts() ) :
 
 			if ( is_home() && ! is_front_page() ) : ?>
@@ -47,10 +40,10 @@ get_header(); ?>
 			get_template_part( 'template-parts/content', 'none' );
 
 		endif; ?>
+	</section>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
 
-<?php
-get_sidebar();
-get_footer();
+	<?php get_sidebar(); ?>
+</section>
+
+<?php get_footer(); ?>
