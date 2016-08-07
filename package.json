@@ -1,0 +1,19 @@
+{
+  "name": "mako",
+  "version": "1.0.0",
+  "description": "Fully-responsive WordPress theme focused on performance.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattkentz/mako.git"
+  },
+  "author": "Matthias Kentzia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mattkentz/mako/issues"
+  },
+  "homepage": "https://github.com/mattkentz/mako#readme"
+}

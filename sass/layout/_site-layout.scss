@@ -1,0 +1,61 @@
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  order: 1;
+}
+
+.nav {
+  order: 9;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+}
+
+.nav-link {
+  margin-left: 100px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  order: 3;
+  width: 95%;
+  align-self: center;
+}
+
+.posts {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.post {
+
+}
+
+.sidebar {
+
+}
+
+.footer {
+  order: 10;
+}
+
+@media (min-width: 40em) {
+  .nav {
+    order: 2;
+  }
+
+  .content {
+    flex-direction: row;
+  }
+
+  .post {
+    max-width: 50em;
+  }
+}
