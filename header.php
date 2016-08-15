@@ -1,22 +1,11 @@
-<?php
-/**
- * The header for our theme.
- *
- * This is the template that displays all of the <head> section and everything up until <div id="content">
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package mako
- */
-
-?><!DOCTYPE html>
+<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-<link rel="stylesheet" href="<?php bloginfo('template_directory');?>/css/style.css">
+<link rel="stylesheet" href="<?php bloginfo('template_directory');?>/dist/css/style.css">
 <!-- <link rel="stylesheet" media="min-width: 40em" href="./sass/style.css" > CSS for larger screens -->
 
 <?php wp_head(); ?>

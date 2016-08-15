@@ -17,6 +17,10 @@ Description
 
 Streamlined WordPress theme focused on responsiveness, minimalism and performance.
 
+Features
+--------
+* Optimized scripts that are concatenated, minified and employ cache busting.
+
 Installation
 ---------------
 
