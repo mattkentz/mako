@@ -1,17 +1,3 @@
-<!DOCTYPE html>
-<html <?php language_attributes(); ?>>
-<head>
-<meta charset="<?php bloginfo( 'charset' ); ?>">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="profile" href="http://gmpg.org/xfn/11">
-<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-<link rel="stylesheet" href="<?php bloginfo('template_directory');?>/dist/css/style.css">
-<!-- <link rel="stylesheet" media="min-width: 40em" href="./sass/style.css" > CSS for larger screens -->
-
-<?php wp_head(); ?>
-</head>
-
-<body id="site-body" <?php body_class(); ?> class="body">
 <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'mako' ); ?></a>
 
 <header id="site-header" class="header" role="banner">

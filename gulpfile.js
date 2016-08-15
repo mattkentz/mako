@@ -8,8 +8,13 @@ var eslint = require('gulp-eslint');
 var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
 var cssnano = require('cssnano');
+var rename = require("gulp-rename");
+var replace = require("gulp-replace");
+var del = require('del');
 
-gulp.task('default', ['build-js', 'build-css', 'watch']);
+var timestamp;
+
+gulp.task('default', ['delete', 'setup', 'build-js', 'build-css', 'build-html', 'watch']);
 
 gulp.task('build-css', function () {
     var processors = [
@@ -23,6 +28,9 @@ gulp.task('build-css', function () {
         .pipe(sass())
         .pipe(postcss(processors))
         .pipe(sourcemaps.write('.'))
+        .pipe(rename(function (path) {
+            path.basename += "-" + timestamp;
+        }))
         .pipe(gulp.dest('dist/css'));
 });
 
@@ -33,6 +41,9 @@ gulp.task('build-js', function() {
         //only uglify if gulp is ran with '--type production'
         .pipe(gutil.env.type === 'production' ? uglify() : gutil.noop())
         .pipe(sourcemaps.write())
+        .pipe(rename(function (path) {
+            path.basename += "-" + timestamp;
+        }))
         .pipe(gulp.dest('dist/js'));
 });
 
@@ -41,7 +52,24 @@ gulp.task('eslint', function() {
         .pipe(eslint());
 });
 
+gulp.task('build-html', function () {
+    return gulp.src('./index.template.php')
+        .pipe(rename("index.php"))
+        .pipe(replace('<TIMESTAMP>', '-' + timestamp))
+        .pipe(gulp.dest('.'));
+});
+
+gulp.task('delete', function () {
+    return del([
+        'dist/'
+    ]);
+});
+
+gulp.task('setup', function() {
+    timestamp = new Date().getTime();
+});
+
 gulp.task('watch', function() {
-    gulp.watch('src/js/**/*.js', ['eslint', 'build-js']);
-    gulp.watch('src/sass/**/*.scss', ['build-css']);
+    gulp.watch('src/js/**/*.js', ['eslint', 'delete', 'setup', 'build-js', 'build-css', 'build-html']);
+    gulp.watch('src/sass/**/*.scss', ['setup', 'delete', 'build-css', 'build-js', 'build-html']);
 });
