@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-	<link rel="stylesheet" href="<?php bloginfo('template_directory');?>/dist/css/style-1471258387374.css">
+	<link rel="stylesheet" href="<?php bloginfo('template_directory');?>/dist/css/style-1471259722643.css">
 	<!-- <link rel="stylesheet" media="min-width: 40em" href="./sass/style.css" > CSS for larger screens -->
 
 	<?php wp_head(); ?>

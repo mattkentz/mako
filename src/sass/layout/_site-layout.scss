@@ -50,6 +50,7 @@
 .sidebar {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .footer {
@@ -74,6 +75,7 @@
     flex-direction: column;
     overflow-x: auto;
     margin-left: 2em;
+    justify-content: flex-start;
   }
 
   .footer {
