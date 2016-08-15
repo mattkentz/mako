@@ -28,6 +28,13 @@ Installation
 2. Click Upload and Choose File, then select the theme's .zip file. Click Install Now.
 3. Click Activate to use your new theme right away.
 
+Development
+-----------
+To build this project locally:
+* Checkout or fork this repository
+* Run `gulp` in terminal to compile the Sass files, bundle resources and generate the resource names.
+* Alternatively run `gulp --type production` to also minify all the resource files.
+
 Frequently Asked Questions
 ---------------
 
