@@ -4,15 +4,16 @@
 }
 
 .header {
-  order: 1;
+  order: 10;
   text-align: center;
 }
 
 .nav {
-  order: 9;
+  order: 90;
   display: flex;
-  align-self: center;
   align-items: center;
+  justify-content: center;
+  width: 100%;
   height: 3em;
 }
 
@@ -32,8 +33,8 @@
 .content {
   display: flex;
   flex-direction: column;
-  order: 3;
-  width: 95%;
+  order: 50;
+  margin: $margin__site-content;
   align-self: center;
 }
 
@@ -48,17 +49,17 @@
 
 .sidebar {
   display: flex;
-  overflow-x: scroll;
+  flex-wrap: wrap;
 }
 
 .footer {
-  order: 10;
+  order: 100;
   display: none;
 }
 
 @media (min-width: $breakpoint__large) {
   .nav {
-    order: 2;
+    order: 20;
   }
 
   .content {

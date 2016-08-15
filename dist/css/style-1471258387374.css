@@ -319,23 +319,25 @@ big {
           flex-direction: column; }
 
 .header {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
+  -webkit-box-ordinal-group: 11;
+      -ms-flex-order: 10;
+          order: 10;
   text-align: center; }
 
 .nav {
-  -webkit-box-ordinal-group: 10;
-      -ms-flex-order: 9;
-          order: 9;
+  -webkit-box-ordinal-group: 91;
+      -ms-flex-order: 90;
+          order: 90;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-item-align: center;
-      align-self: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
   height: 3em; }
 
 .menu {
@@ -361,10 +363,10 @@ big {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-ordinal-group: 4;
-      -ms-flex-order: 3;
-          order: 3;
-  width: 95%;
+  -webkit-box-ordinal-group: 51;
+      -ms-flex-order: 50;
+          order: 50;
+  margin: 1.5em;
   -ms-flex-item-align: center;
       align-self: center; }
 
@@ -376,19 +378,20 @@ big {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow-x: scroll; }
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
 .footer {
-  -webkit-box-ordinal-group: 11;
-      -ms-flex-order: 10;
-          order: 10;
+  -webkit-box-ordinal-group: 101;
+      -ms-flex-order: 100;
+          order: 100;
   display: none; }
 
 @media (min-width: 50em) {
   .nav {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2; }
+    -webkit-box-ordinal-group: 21;
+        -ms-flex-order: 20;
+            order: 20; }
   .content {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -462,6 +465,12 @@ img {
 table {
   margin: 0 0 1.5em;
   width: 100%; }
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+.nav {
+  background-color: #0D1321; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -548,15 +557,19 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: royalblue; }
+  color: #0D1321;
+  text-decoration: none; }
   a:visited {
-    color: purple; }
+    color: #3E5C76; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #1D2D44; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
     outline: 0; }
+
+.nav a {
+  color: #fff; }
 
 /*--------------------------------------------------------------
 ## Menus

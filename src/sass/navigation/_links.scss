@@ -1,5 +1,6 @@
 a {
 	color: $color__link;
+	text-decoration: none;
 
 	&:visited {
 		color: $color__link-visited;
@@ -15,5 +16,11 @@ a {
 	&:hover,
 	&:active {
 		outline: 0;
+	}
+}
+
+.nav {
+	a {
+		color: $color__link-nav;
 	}
 }

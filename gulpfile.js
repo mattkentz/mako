@@ -53,8 +53,10 @@ gulp.task('eslint', function() {
 });
 
 gulp.task('build-html', function () {
-    return gulp.src('./index.template.php')
-        .pipe(rename("index.php"))
+    return gulp.src('./templates/**/*.template.php')
+        .pipe(rename(function (path) {
+            path.basename = path.basename.replace('.template', '');
+        }))
         .pipe(replace('<TIMESTAMP>', '-' + timestamp))
         .pipe(gulp.dest('.'));
 });
@@ -72,4 +74,5 @@ gulp.task('setup', function() {
 gulp.task('watch', function() {
     gulp.watch('src/js/**/*.js', ['eslint', 'delete', 'setup', 'build-js', 'build-css', 'build-html']);
     gulp.watch('src/sass/**/*.scss', ['setup', 'delete', 'build-css', 'build-js', 'build-html']);
+    gulp.watch('templates/**/*.template.php', ['setup', 'delete', 'build-css', 'build-js', 'build-html']);
 });

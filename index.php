@@ -1,27 +1,4 @@
-<!DOCTYPE html>
-<html <?php language_attributes(); ?>>
-<head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-	<link rel="stylesheet" href="<?php bloginfo('template_directory');?>/dist/css/style-1471252875357.css">
-	<!-- <link rel="stylesheet" media="min-width: 40em" href="./sass/style.css" > CSS for larger screens -->
-
-	<?php wp_head(); ?>
-</head>
-
-<body id="site-body" <?php body_class(); ?> class="body">
-
 <?php get_header(); ?>
-
-<section class="content">
-	<section class="posts">
-		<article class="post">
-
-		</article>
-	</section>
-</section>
 
 <section class="content">
 	<section class="posts">
