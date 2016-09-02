@@ -62,6 +62,20 @@
   display: none;
 }
 
+.widget {
+  width: 100%;
+}
+
+@media (min-width: $breakpoint__medium) {
+  .sidebar {
+    justify-content: space-between;
+  }
+
+  .widget {
+    width: 15em;
+  }
+}
+
 @media (min-width: $breakpoint__large) {
   .nav {
     order: 20;
@@ -82,11 +96,15 @@
   .sidebar {
     flex-direction: column;
     overflow-x: auto;
-    margin-left: 2em;
+    margin-left: 3em;
     justify-content: flex-start;
   }
 
   .footer {
     display: inline-block;
+  }
+
+  .widget {
+    width: 100%;
   }
 }

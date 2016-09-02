@@ -1,3 +1,14 @@
+$color__branding-main: #212121;
+$color__branding-pop: #e74c3c;
+$color__branding-pop-light: #ED6A5E;
+$color__branding-pop-dark: #A82725;
+
+
+$color__header: $color__branding-main;
+$color__navigation: $color__branding-main;
+$color__separator: $color__branding-main;
+$color__widget-headings: $color__branding-main;
+
 $color__background-body: #fff;
 $color__background-screen: #f1f1f1;
 $color__background-hr: #ccc;
@@ -9,10 +20,10 @@ $color__text-screen: #21759b;
 $color__text-input: #666;
 $color__text-input-focus: #111;
 
-$color__link: #0D1321;
+$color__link: $color__branding-pop;
 $color__link-nav: #fff;
-$color__link-visited: #3E5C76;
-$color__link-hover: #1D2D44;
+$color__link-visited: $color__branding-pop;
+$color__link-hover: $color__branding-pop-dark;
 $color__text-main: #404040;
 
 $color__border-button: #ccc #ccc #bbb;
@@ -20,9 +31,3 @@ $color__border-button-hover: #ccc #bbb #aaa;
 $color__border-button-focus: #aaa #bbb #bbb;
 $color__border-input: #ccc;
 $color__border-abbr: #666;
-
-$color__branding-main: #0D1321;
-
-$color__header: $color__branding-main;
-$color__navigation: $color__branding-main;
-$color__separator: $color__branding-main;
