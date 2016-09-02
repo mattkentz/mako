@@ -34,7 +34,7 @@
 		endif; ?>
 	</section>
 
-
+	<hr class="separator"/>
 	<?php get_sidebar(); ?>
 </section>
 

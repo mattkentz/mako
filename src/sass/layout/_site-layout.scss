@@ -47,6 +47,10 @@
 
 }
 
+.separator {
+  width: 100%;
+}
+
 .sidebar {
   display: flex;
   flex-wrap: wrap;
@@ -69,6 +73,10 @@
 
   .post {
     max-width: 50em;
+  }
+
+  .separator {
+    display: none;
   }
 
   .sidebar {
