@@ -366,11 +366,12 @@ big {
   -webkit-box-ordinal-group: 51;
       -ms-flex-order: 50;
           order: 50;
-  margin: 1.5em; }
+  padding: 1.5em; }
 
 .posts {
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  width: 100%; }
 
 .separator {
   width: 100%; }
@@ -412,18 +413,20 @@ big {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row; }
-  .post {
+  .posts {
+    width: 80%;
     max-width: 50em; }
   .separator {
     display: none; }
   .sidebar {
-    width: 15em;
+    width: 20%;
+    max-width: 15em;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     overflow-x: auto;
-    margin-left: 3em;
+    margin-left: 0.5em;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start; }
