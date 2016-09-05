@@ -35,7 +35,6 @@
   flex-direction: column;
   order: 50;
   margin: $margin__site-content;
-  align-self: center;
 }
 
 .posts {
@@ -94,6 +93,7 @@
   }
 
   .sidebar {
+    width: 15em;
     flex-direction: column;
     overflow-x: auto;
     margin-left: 3em;
